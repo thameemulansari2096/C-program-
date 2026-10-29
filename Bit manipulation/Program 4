@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int reg = 0xA5;
+    printf("Initial GPIO REG: 0x%02X\n", reg);
+    reg = reg | (1 << 2);
+    reg = reg & ~(1 << 5);
+    reg = reg ^ (1 << 7);
+    printf("Final GPIO REG: 0x%02X\n", reg);
+  return 0;
+}
