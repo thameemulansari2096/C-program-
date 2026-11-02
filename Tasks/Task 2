@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+
+int sensor=84;
+{
+if(sensor <= 19)
+printf("low\n");
+else if(sensor <= 69)
+printf("normal\n");
+else if(sensor <= 89)
+printf("high\n");
+else if(sensor=100)
+printf("critical\n");
+else
+printf("error");
+}
+return 0;
+}
