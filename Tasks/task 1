@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    char model_number[]="sc-101";
+    int v=5;
+    float c=42.5;
+    float a=0.35;
+
+    printf("device model:%s\n",model_number);
+    printf("supply volyage:%d\n",v);
+    printf("current consumption:%.2f\n",a);
+    printf("operation temperature;%.2f\n",c);
+
+    float power=v*a;
+    printf("power consumpion:%.2f\n",power);
+    return 0;
+}
